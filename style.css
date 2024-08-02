@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    border-radius: 10px;
+    width: 570px;
+    height: 470px;
+    display: flex;
+    background-color: white;
+}
+.header{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+.title{
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+}
+.desc{
+    align-items: center;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.rate{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.price{
+    color:  hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.discount{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.content{
+    display: grid;
+    padding: 25px;
+    gap: 0.75rem;
+}
+.mob{
+    display: none;
+}
+.desk{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+}
+.button{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.button:hover{
+    background-color: hsl(158, 37%, 17%);
+}
+
+@media(max-width:45em){
+    .rate{
+        padding: 0;
+    }
+    .mob{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .desk{
+        display: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    main{
+        width: 320px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    .content{
+        width: 100%;
+    }
+}
